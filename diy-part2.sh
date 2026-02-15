@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
@@ -25,3 +25,6 @@ sed -i 's/ImmortalWrt/XG-040G-MD/g' package/base-files/files/bin/config_generate
 #sed -i '8i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 #curl -sSL https://raw.githubusercontent.com/mufeng05/turboacc/main/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
+
+# load mtd_rw
+sed -i "/exit 0/i insmod mtd-rw i_want_a_brick=1" package/base-files/files/etc/rc.local
