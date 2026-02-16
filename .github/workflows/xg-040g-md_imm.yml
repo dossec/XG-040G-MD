@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: xg-040g-md_imm
 
 on:
   repository_dispatch:
