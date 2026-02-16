@@ -21,7 +21,7 @@ permissions:
   actions: read    # 可选，基础读取权限
 env:
   REPO_URL: https://github.com/bingoguo93/immortalwrt.git
-  REPO_BRANCH: main
+  REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 040g-md.config
   DIY_P1_SH: diy-part1.sh
