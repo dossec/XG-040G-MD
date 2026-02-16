@@ -15,7 +15,10 @@ name: OpenWrt Builder
 on:
   repository_dispatch:
   workflow_dispatch:
-
+permissions:
+  contents: write  # 授予写入仓库内容的权限（创建Release必需）
+  packages: write  # 可选，如需上传包则添加
+  actions: read    # 可选，基础读取权限
 env:
   REPO_URL: https://github.com/hong66489/openwrt
   REPO_BRANCH: main
