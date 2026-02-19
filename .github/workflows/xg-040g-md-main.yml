@@ -1,4 +1,4 @@
-name: Build_XG_040G_MD_ForkMain
+name: xg-040g-md-main
 
 permissions:
   contents: write
